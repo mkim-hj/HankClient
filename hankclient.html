@@ -14,11 +14,21 @@
   
 	<h1>HANK</h1>
 
-	<form>
+	<form id="cal-card-info">
 	First 6 digits on back of Cal 1 Card:<br>
-	<input type="text" name="firstname">
+	<input class="digits" type="text" placeholder="246302" required> <br>
+	<input type="submit">
 	</form>
 
+	<div>Digits: {{getDigits}}</div>
+
+	<div>Hits: {{getHits}}</div>
+
+	<div>Misses: {{getMisses}}</div>
+
+	<div>Islands: {{getIslands}}</div>
+
+	<!-- Parse Initialization -->
 	<script type="text/javascript">
 	Parse.initialize("BQjnCXeoHfDtJTMiXUjWQZsUEdbkZ9oGKQsDrEyA", "SjIc0demdK5MHmSPkbxbQfGZri5KFvai2vOwt2lj");
 

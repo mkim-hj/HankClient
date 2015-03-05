@@ -16,6 +16,9 @@ if (Meteor.isClient) {
     getIslands: function() {
       return Session.get("islands");
     },
+    getPercentage: function() {
+      return Math.floor(100*(Number(Session.get("islands")) + Number(Session.get("hits"))) / (Number(Session.get("islands")) + Number(Session.get("hits")) + Number(Session.get("misses")))); 
+    },
     hide: function() {
       return Session.get("hide");
     }

@@ -65,6 +65,10 @@ h1 {
 /* L0g0 */
 #logo {
   text-align: center;
+  a {
+    display: block;
+    text-decoration: none;
+  }
   h1 {
     font-size: 50px;
     letter-spacing: 0.1em;

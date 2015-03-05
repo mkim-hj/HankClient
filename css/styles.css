@@ -43,9 +43,14 @@ h1 {
 /* L0g0 */
 #logo {
   text-align: center; }
+  #logo a {
+    display: block;
+    text-decoration: none; }
   #logo h1 {
     font-size: 50px;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 38px;
+    margin-bottom: 30px; }
   #logo .logo-img {
     background: url(../images/logo.png);
     background-size: cover;
@@ -62,6 +67,15 @@ h1 {
   width: 100%; }
 
 /* Da Formz */
+p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+strong {
+  font-weight: 700; }
+
 .btn {
   background: #d82435;
   border: 1px solid #d82435;
@@ -88,8 +102,7 @@ h1 {
   transition: border-width 1s ease;
   width: 100%; }
   .digits:focus {
-    border: 2px solid #d82435;
-    transition: border-width 1s ease;
-    outline: none; }
+    outline: none;
+    transition: border-width 1s ease; }
 
 /*# sourceMappingURL=styles.css.map */

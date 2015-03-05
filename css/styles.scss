@@ -65,9 +65,15 @@ h1 {
 /* L0g0 */
 #logo {
   text-align: center;
+  a {
+    display: block;
+    text-decoration: none;
+  }
   h1 {
     font-size: 50px;
     letter-spacing: 0.1em;
+    line-height: 38px;
+    margin-bottom: 30px;
   }
   .logo-img {
     background: url(../images/logo.png);
@@ -89,6 +95,15 @@ $max_width: 300px;
 }
 
 /* Da Formz */
+p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+strong {
+  font-weight: 700;
+}
 .btn {
   background: $bp_red;
   border: 1px solid $bp_red;
@@ -116,9 +131,8 @@ $max_width: 300px;
   transition: border-width 1s ease;
   width: 100%;
   &:focus {
-    border: 2px solid $bp_red;
-    transition: border-width 1s ease;
     outline: none;
+    transition: border-width 1s ease;
   }
 }
 

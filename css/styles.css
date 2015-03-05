@@ -98,6 +98,7 @@ strong {
   border: 1px solid #d82435;
   box-sizing: border-box;
   font-size: 15px;
+  letter-spacing: 0.1em;
   padding: 5px;
   transition: border-width 1s ease;
   width: 100%; }

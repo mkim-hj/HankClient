@@ -25,17 +25,21 @@
     {{#if hide}}
     <form id="cal-card-info">
       <p>Please enter the <strong>first 6 digits</strong> on the back of your Cal1 Card</p>
-      <input name="calid" class="digits" type="text" placeholder="314159" required>
+      <input name="calid" class="digits" type="text" placeholder="314159" maxlength="6" required>
       <input class="btn" type="submit">
     </form>
     {{else}}
-    <div>Digits: {{getDigits}}</div>
 
-    <div>Hits: {{getHits}}</div>
+    <h4>{{getDigits}}</h4>
 
-    <div>Misses: {{getMisses}}</div>
+    <h3>Hits:</h3>
+    <h4>{{getHits}}</h4>
 
-    <div>Islands: {{getIslands}}</div>
+    <h3>Misses:</h3>
+    <h4>{{getMisses}}</h4>
+
+    <h3>Islands:</h3>
+    <h4>{{getIslands}}</h4>
     {{/if}}
   </div>
 

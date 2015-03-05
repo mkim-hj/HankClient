@@ -20,13 +20,13 @@
       <div class="logo-img"></div>
       <h1>HANK</h1>
     </div>
-
+    {{#if hide}}
     <form id="cal-card-info">
       <label for="calid">Enter the first 6 digits on the back of your Cal1 Card</label>
       <input name="calid" class="digits" type="text" placeholder="314159" required>
       <input class="btn" type="submit">
     </form>
-
+    {{else}}
     <div>Digits: {{getDigits}}</div>
 
     <div>Hits: {{getHits}}</div>
@@ -34,6 +34,7 @@
     <div>Misses: {{getMisses}}</div>
 
     <div>Islands: {{getIslands}}</div>
+    {{/if}}
   </div>
 
   <!-- Parse Initialization -->

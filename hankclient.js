@@ -1,6 +1,8 @@
 if (Meteor.isClient) {
   // counter starts at 0
 
+  Session.set("hide", true);
+
   Template.body.helpers({
     getDigits: function() {
       return Session.get("digits");
@@ -13,6 +15,9 @@ if (Meteor.isClient) {
     },
     getIslands: function() {
       return Session.get("islands");
+    },
+    hide: function() {
+      return Session.get("hide");
     }
   });
 
@@ -37,6 +42,7 @@ if (Meteor.isClient) {
             Session.set("hits", user.attributes.hits);
             Session.set("misses", user.attributes.misses);
             Session.set("islands", user.attributes.islands);
+            Session.set("hide", false);
           } else {
             alert("More than 2 results");
           }

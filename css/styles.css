@@ -1,0 +1,93 @@
+/*
+  Styles for Hank
+  Innovative Design
+  Product Tier, 2015
+*/
+/* Colorz */
+/* Typographie */
+@font-face {
+  font-family: "Bariol";
+  src: url("../fonts/bariol/Bariol_Light-webfont.eot"), url("../fonts/bariol/Bariol_Light-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Light-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Light-webfont.svg") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Bariol";
+  src: url("../fonts/bariol/Bariol_Regular-webfont.eot"), url("../fonts/bariol/Bariol_Regular-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Regular-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Regular-webfont.svg") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Bariol";
+  src: url("../fonts/bariol/Bariol_Bold-webfont.eot"), url("../fonts/bariol/Bariol_Bold-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Bold-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Bold-webfont.svg") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+label,
+input {
+  color: #d82435;
+  font-family: "Bariol", "Helvetica", "Arial";
+  font-weight: 300; }
+
+h1 {
+  font-weight: 700; }
+
+/* L0g0 */
+#logo {
+  text-align: center; }
+  #logo h1 {
+    font-size: 50px;
+    letter-spacing: 0.1em; }
+  #logo .logo-img {
+    background: url(../images/logo.png);
+    background-size: cover;
+    display: inline-block;
+    height: 130px;
+    width: 130px; }
+
+/* Layout */
+#wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 40px 25px;
+  width: 100%; }
+
+/* Da Formz */
+.btn {
+  background: #d82435;
+  border: 1px solid #d82435;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+  outline: none;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%; }
+  .btn:hover {
+    background: white;
+    color: #d82435;
+    cursor: pointer; }
+
+.digits {
+  border: 1px solid #d82435;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 5px;
+  transition: border-width 1s ease;
+  width: 100%; }
+  .digits:focus {
+    border: 2px solid #d82435;
+    transition: border-width 1s ease;
+    outline: none; }
+
+/*# sourceMappingURL=styles.css.map */

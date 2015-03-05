@@ -1,0 +1,136 @@
+/*
+  Styles for Hank
+  Innovative Design
+  Product Tier, 2015
+*/
+
+
+/* Colorz */
+$bp_red: #d82435;
+$main_text: $bp_red;
+
+/* Typographie */
+@font-face {
+  font-family: "Bariol";
+  src: url('../fonts/bariol/Bariol_Light-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/bariol/Bariol_Light-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bariol/Bariol_Light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bariol/Bariol_Light-webfont.svg') format('svg'); /* Legacy iOS */
+
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Bariol";
+  src: url('../fonts/bariol/Bariol_Regular-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/bariol/Bariol_Regular-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bariol/Bariol_Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bariol/Bariol_Regular-webfont.svg') format('svg'); /* Legacy iOS */
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Bariol";
+  src: url('../fonts/bariol/Bariol_Bold-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/bariol/Bariol_Bold-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bariol/Bariol_Bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bariol/Bariol_Bold-webfont.svg') format('svg'); /* Legacy iOS */
+
+  font-style: normal;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+label,
+input {
+  color: $main_text;
+  font-family: "Bariol", "Helvetica", "Arial";
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/* L0g0 */
+#logo {
+  text-align: center;
+  h1 {
+    font-size: 50px;
+    letter-spacing: 0.1em;
+  }
+  .logo-img {
+    background: url(../images/logo.png);
+    background-size: cover;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+  }
+}
+
+/* Layout */
+$max_width: 300px;
+#wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $max_width;
+  padding: 40px 25px;
+  width: 100%;
+}
+
+/* Da Formz */
+.btn {
+  background: $bp_red;
+  border: 1px solid $bp_red;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+  outline: none;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  &:hover {
+    background: white;
+    color: $bp_red;
+    cursor: pointer;
+  }
+}
+.digits {
+  border: 1px solid $bp_red;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 5px;
+  transition: border-width 1s ease;
+  width: 100%;
+  &:focus {
+    border: 2px solid $bp_red;
+    transition: border-width 1s ease;
+    outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

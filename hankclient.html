@@ -1,46 +1,54 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
+  <title>Hank</title>
   <meta name="description" content="My Parse App">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.3.5.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
   
-	<h1>HANK</h1>
+  <div id="wrapper">
+    <div id="logo">
+      <div class="logo-img"></div>
+      <h1>HANK</h1>
+    </div>
 
-	<form id="cal-card-info">
-	First 6 digits on back of Cal 1 Card:<br>
-	<input class="digits" type="text" placeholder="246302" required> <br>
-	<input type="submit">
-	</form>
+    <form id="cal-card-info">
+      <label for="calid">Enter the first 6 digits on the back of your Cal1 Card</label>
+      <input name="calid" class="digits" type="text" placeholder="314159" required>
+      <input class="btn" type="submit">
+    </form>
 
-	<div>Digits: {{getDigits}}</div>
+    <div>Digits: {{getDigits}}</div>
 
-	<div>Hits: {{getHits}}</div>
+    <div>Hits: {{getHits}}</div>
 
-	<div>Misses: {{getMisses}}</div>
+    <div>Misses: {{getMisses}}</div>
 
-	<div>Islands: {{getIslands}}</div>
+    <div>Islands: {{getIslands}}</div>
+  </div>
 
-	<!-- Parse Initialization -->
-	<script type="text/javascript">
-	Parse.initialize("BQjnCXeoHfDtJTMiXUjWQZsUEdbkZ9oGKQsDrEyA", "SjIc0demdK5MHmSPkbxbQfGZri5KFvai2vOwt2lj");
+  <!-- Parse Initialization -->
+  <script type="text/javascript">
+  Parse.initialize("BQjnCXeoHfDtJTMiXUjWQZsUEdbkZ9oGKQsDrEyA", "SjIc0demdK5MHmSPkbxbQfGZri5KFvai2vOwt2lj");
 
-	var TestObject = Parse.Object.extend("TestObject");
-	var testObject = new TestObject();
-	  testObject.save({foo: "bar"}, {
-	  success: function(object) {
-	    $(".success").show();
-	  },
-	  error: function(model, error) {
-	    $(".error").show();
-	  }
-	});
-	</script>
+  var TestObject = Parse.Object.extend("TestObject");
+  var testObject = new TestObject();
+    testObject.save({foo: "bar"}, {
+    success: function(object) {
+      $(".success").show();
+    },
+    error: function(model, error) {
+      $(".error").show();
+    }
+  });
+  </script>
 </body>

@@ -7,19 +7,19 @@
 /* Typographie */
 @font-face {
   font-family: "Bariol";
-  src: url("/fonts/bariol/Bariol_Light-webfont.eot"), url("/fonts/bariol/Bariol_Light-webfont.woff") format("woff"), url("/fonts/bariol/Bariol_Light-webfont.ttf") format("truetype"), url("/fonts/bariol/Bariol_Light-webfont.svg") format("svg");
+  src: url("../fonts/bariol/Bariol_Light-webfont.eot"), url("../fonts/bariol/Bariol_Light-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Light-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Light-webfont.svg") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 300; }
 @font-face {
   font-family: "Bariol";
-  src: url("/fonts/bariol/Bariol_Regular-webfont.eot"), url("/fonts/bariol/Bariol_Regular-webfont.woff") format("woff"), url("/fonts/bariol/Bariol_Regular-webfont.ttf") format("truetype"), url("/fonts/bariol/Bariol_Regular-webfont.svg") format("svg");
+  src: url("../fonts/bariol/Bariol_Regular-webfont.eot"), url("../fonts/bariol/Bariol_Regular-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Regular-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Regular-webfont.svg") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 500; }
 @font-face {
   font-family: "Bariol";
-  src: url("/fonts/bariol/Bariol_Bold-webfont.eot"), url("/fonts/bariol/Bariol_Bold-webfont.woff") format("woff"), url("/fonts/bariol/Bariol_Bold-webfont.ttf") format("truetype"), url("/fonts/bariol/Bariol_Bold-webfont.svg") format("svg");
+  src: url("../fonts/bariol/Bariol_Bold-webfont.eot"), url("../fonts/bariol/Bariol_Bold-webfont.woff") format("woff"), url("../fonts/bariol/Bariol_Bold-webfont.ttf") format("truetype"), url("../fonts/bariol/Bariol_Bold-webfont.svg") format("svg");
   /* Legacy iOS */
   font-style: normal;
   font-weight: 700; }
